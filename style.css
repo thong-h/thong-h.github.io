@@ -17,6 +17,7 @@ body {
   margin: 0;
   background: var(--white);
   font-family: var(--font1);
+  box-sizing: border-box;
 }
 
 /* ---------------------- This is Navbar ---------------------*/
@@ -38,10 +39,12 @@ nav {
   font-size: 1.5em;
   font-weight: 900;
   padding-left: 10%;
+  text-transform: uppercase;
 }
 
 .nav-elements {
   list-style: none;
+  width: 310px;
   display: flex;
   justify-content: space-between;
   color: var(--accent);
@@ -56,6 +59,7 @@ nav {
   border-radius: 5px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
+  box-sizing: border-box;
 }
 
 .nav-elements li :hover {
@@ -99,6 +103,7 @@ nav {
   line-height: 1.2em;
   text-align: right;
   text-transform: lowercase;
+  margin-bottom: 35px;
 }
 
 .greet span {
@@ -109,16 +114,19 @@ nav {
   color: var(--accent);
   text-align: right;
   letter-spacing: 1.25px;
-  line-height: 1.65em;
+  line-height: 1.75em;
   font-size: 1.15em;
   font-weight: 600;
   margin-top: -10px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
 }
 
 .emp {
   font-weight: 700;
-  padding: 0 5px;
+  padding: 2px 5px;
   color: var(--white);
   background: var(--accent);
 }
@@ -178,6 +186,11 @@ nav {
 .face {
   padding: 5px;
   border: 3px solid var(--accent);
+  box-sizing: border-box;
+}
+
+.arrow-up {
+  transform: translateY(5px);
 }
 
 /* ---------------------- This is Gallery ---------------------*/
@@ -214,7 +227,6 @@ nav {
   /* grid-template-columns: repeat(3, 1fr); */
   gap: 50px;
   margin-bottom: 80px;
-
 }
 
 .frame-AW {
@@ -232,6 +244,21 @@ nav {
   object-fit: cover;
   filter: grayscale(0);
   transition: 0.3s ease;
+  box-sizing: border-box;
+
+}
+
+.frame-AW .imageBehind video {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  padding: 5px;
+  border: 3px solid var(--accent);
+  object-fit: cover;
+  filter: grayscale(0);
+  transition: 0.3s ease;
+  box-sizing: border-box;
+
 }
 
 .frame-AW .imageBehind iframe {
@@ -336,7 +363,7 @@ nav {
   position: fixed;
   bottom: 5%;
   right: 0%;
-  margin-right: -47px;
+  margin-right: -50px;
   transition: 0.3s ease;
 }
 
@@ -366,6 +393,7 @@ nav {
 
 /* ---------------------- This is Foot Note ---------------------*/
 .foot-note {
+  margin-top: 50px;
   width: 100%;
   font-family: var(--font1);
   color: var(--accent);
@@ -672,6 +700,23 @@ nav {
 
 /* Smartphone Screen */
 @media screen and (max-width: 800px) {
+
+  /* All Page */
+  .logo {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .nav-elements {
+    width: 500px;
+    justify-content: space-around;
+    padding-right: 0%;
+    margin-left: -40px;
+  }
 
   /* Projects Page */
   .grid-container-artwork {
