@@ -745,8 +745,8 @@ video {
   }
 
   .frame img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 15px;
     object-fit: cover;
   }
