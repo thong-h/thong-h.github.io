@@ -744,6 +744,13 @@ video {
     gap: 20px;
   }
 
+  .frame img {
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
   /* Home Page */
   .greet {
     font-size: 3.5em;
