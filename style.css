@@ -278,6 +278,11 @@ nav {
   transition: 0.3s ease;
 }
 
+.imageBehind:hover video {
+  filter: grayscale(1) blur(1px);
+  transition: 0.3s ease;
+}
+
 .imageBehind:hover iframe {
   filter: grayscale(1) blur(1px);
   transition: 0.3s ease;
@@ -287,7 +292,7 @@ nav {
   position: absolute;
   width: 95.2%;
   height: 35.5%;
-  margin-top: -40%;
+  margin-top: -40.5%;
   padding-top: 10px;
   padding-left: 15px;
   font-family: var(--font1);
@@ -361,7 +366,7 @@ nav {
 
 .top-button {
   position: fixed;
-  bottom: 5%;
+  bottom: 60px;
   right: 0%;
   margin-right: -50px;
   transition: 0.3s ease;
@@ -375,7 +380,7 @@ nav {
   font-size: 1.1em;
   font-weight: 600;
   margin-bottom: 30px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   border-radius: 5px 0 0 5px;
   transition: 0.3s ease;
 }
@@ -421,19 +426,17 @@ nav {
 
 .tab-contact {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 120px);
   grid-template-columns: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 20px;
+  row-gap: 20px;
   align-items: center;
   margin-bottom: 12px;
   font-size: 1.2em;
-
 }
 
 .email-TH {
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 3px solid var(--blue1);
   color: var(--blue1);
   line-height: 1.5em;
@@ -451,7 +454,7 @@ nav {
 .social-media {
   height: 100%;
   background: var(--accent);
-  border-radius: 10px;
+  border-radius: 5px;
   line-height: 1.75em;
   padding: 0px 15px;
   color: var(--white);
@@ -476,11 +479,11 @@ nav {
   padding-left: 50px;
 }
 
-
 .sub-about {
-  /* width: 20%; */
-  text-align: center;
-  margin-top: 40px;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .sub-about a {
@@ -490,7 +493,6 @@ nav {
   font-weight: 700;
   padding: 10px 15px;
   border-radius: 5px;
-  margin: 0 20px;
   transition: 0.3s ease;
 }
 
@@ -505,13 +507,23 @@ nav {
 
 .artwork {
   margin: 60px auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.artwork img,
+iframe,
+video {
   max-width: 800px;
-  padding: 5px 5px 1px 5px;
+  padding: 5px;
   border: 3px solid var(--accent);
+  box-sizing: border-box;
 }
 
 .tcontainer {
   max-width: 800px;
+  padding: 0 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -549,6 +561,7 @@ nav {
 .smtitle {
   color: var(--accent);
   font-weight: 600;
+  line-height: 2em;
   font-size: 1.25rem;
   border-bottom: 3px solid var(--accent);
   text-transform: uppercase;
@@ -647,6 +660,7 @@ nav {
   .p-layout {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .p-tag {
@@ -660,24 +674,23 @@ nav {
     top: 0;
     width: 100%;
     padding: 0px;
-    background: var(--white);
     border-right: 0;
-    padding-bottom: 10px;
+    border-radius: 0;
     text-align: center;
     justify-content: center;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: -30px;
+    margin-bottom: -20px;
     z-index: 2;
   }
 
   .side-bar a {
-    color: var(--accent);
+    color: var(--white);
     font-family: var(--font1);
     font-size: 100%;
     font-weight: 600;
     padding: 15px 20px 15px 20px;
-    border-bottom: 1px solid var(--blue1);
+    border-bottom: 0px solid var(--blue1);
     margin: 0;
   }
 
@@ -687,6 +700,14 @@ nav {
 
   .side-bar {
     left: 10%;
+  }
+
+  .side-bar a:hover {
+    color: var(--blue1);
+    background: var(--white);
+    padding: 15px 20px 15px 20px;
+    margin-left: 0px;
+    transition: 0.3s ease;
   }
 
 
@@ -716,6 +737,16 @@ nav {
     justify-content: space-around;
     padding-right: 0%;
     margin-left: -40px;
+  }
+
+  /* Home and CT Page */
+  .grid-container {
+    gap: 20px;
+  }
+
+  /* Home Page */
+  .greet {
+    font-size: 3.5em;
   }
 
   /* Projects Page */
