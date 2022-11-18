@@ -419,7 +419,7 @@ nav {
   font-weight: 600;
   /* text-transform: capitalize; */
   color: var(--blue1);
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 
@@ -718,7 +718,7 @@ video {
 }
 
 
-/* Smartphone Screen */
+/* Smartphone Screen (width: 390px)*/
 @media screen and (max-width: 800px) {
 
   /* All Page */
@@ -764,7 +764,7 @@ video {
   }
 
   .greet {
-    font-size: 3.25em;
+    font-size: 3.2em;
     text-align: center;
     padding: 0 20px;
   }
@@ -796,6 +796,7 @@ video {
     width: 80%;
     height: 125px;
     margin-left: 20px;
+    text-align: center;
   }
 
   .button {
@@ -824,6 +825,20 @@ video {
   .top-button:hover {
     margin-right: -50px;
     transition: 0.3s ease;
+  }
+
+
+  /* SUB-Projects Page */
+  .atitle {
+    font-family: var(--font1);
+    color: var(--blue1);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .year {
+    font-size: 1.5rem;
   }
 }
 
