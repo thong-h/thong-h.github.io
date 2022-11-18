@@ -102,7 +102,6 @@ nav {
   font-weight: 600;
   line-height: 1.2em;
   text-align: right;
-  text-transform: lowercase;
   margin-bottom: 35px;
 }
 
@@ -740,9 +739,6 @@ video {
   }
 
   /* Home and CT Page */
-  .grid-container {
-    gap: 20px;
-  }
 
   .frame img {
     width: 350px;
@@ -750,6 +746,33 @@ video {
     border-radius: 15px;
     object-fit: cover;
   }
+
+
+  .grid-container {
+    width: 100%;
+    height: 70%;
+    gap: 20px;
+  }
+
+  .intro {
+    color: var(--blue1);
+    font-family: var(--font1);
+    font-size: 1em;
+    margin-top: -50px;
+    text-align: left;
+    justify-self: end;
+  }
+
+  .greet {
+    font-family: var(--font1);
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-align: right;
+    margin-bottom: 35px;
+  }
+
+
 
   /* Home Page */
   .greet {
@@ -762,6 +785,11 @@ video {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: none;
     justify-content: center;
+  }
+
+  .top-button:hover {
+    margin-right: -50px;
+    transition: 0.3s ease;
   }
 }
 
