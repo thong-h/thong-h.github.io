@@ -18,6 +18,7 @@ body {
   background: var(--white);
   font-family: var(--font1);
   box-sizing: border-box;
+  scrollbar-gutter: stable both-edges;
 }
 
 /* ---------------------- This is Navbar ---------------------*/
@@ -77,14 +78,14 @@ nav {
 /* ---------------------- This is Homepage ---------------------*/
 
 .grid-container {
-  width: 80%;
+  /* width: 80%; */
   height: 70%;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
-  margin-top: 15vh;
+  margin-top: 12vh;
 }
 
 .intro {
@@ -101,7 +102,7 @@ nav {
   font-size: 4em;
   font-weight: 600;
   line-height: 1.2em;
-  text-align: right;
+  /* text-align: right; */
   margin-bottom: 35px;
 }
 
@@ -109,9 +110,9 @@ nav {
   text-transform: capitalize;
 }
 
-.left-Text {
+.home-Text {
   color: var(--accent);
-  text-align: right;
+  text-align: left;
   letter-spacing: 1.25px;
   line-height: 1.75em;
   font-size: 1.15em;
@@ -131,18 +132,18 @@ nav {
 }
 
 .CTA {
-  margin-left: 38px;
+  margin-left: 30px;
   font-size: 1.15em;
   font-weight: 500;
 }
 
 .button-holder {
   background: var(--blue1);
-  border-radius: 15px;
-  float: right;
-  width: 400px;
-  height: 125px;
-  margin-left: -10%;
+  border-radius: 5px;
+  /* float: right; */
+  width: 300px;
+  height: 65px;
+  /* margin-left: -10%; */
   padding-left: 12px;
   padding-top: 15px;
 }
@@ -154,9 +155,9 @@ nav {
   font-size: 1.75em;
   letter-spacing: 1.25px;
   border-left: 3px solid var(--white);
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 100px;
+  /* padding-left: 15px; */
+  /* padding-top: 15px; */
+  /* padding-bottom: 100px; */
   padding: 15px 30.5% 10px 15px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
