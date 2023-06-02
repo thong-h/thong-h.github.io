@@ -29,6 +29,7 @@ body {
   font-family: var(--font1);
   box-sizing: border-box;
   scrollbar-gutter: stable both-edges;
+  /* overflow-y: scroll; */
 }
 
 :after,
@@ -396,6 +397,10 @@ nav {
   background: var(--accent);
   transition: var(--transition);
   opacity: 100%;
+}
+
+picture>img {
+  display: none;
 }
 
 
@@ -889,6 +894,14 @@ video {
   .top-button:hover {
     margin-right: -50px;
     transition: var(--transition);
+  }
+
+  picture>img {
+    display: initial;
+  }
+
+  picture>video {
+    display: none;
   }
 
 
