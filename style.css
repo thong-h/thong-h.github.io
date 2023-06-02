@@ -258,15 +258,9 @@ nav {
   /* width: 80%; */
   margin: auto;
   display: grid;
-  grid-template-columns: 390px 1fr;
+  grid-template-columns: 20% 1fr;
   /* column-gap: 50px; */
-}
-
-.left-bar {
   /* align-items: start; */
-  /* position: relative; */
-  background-color: var(--blue1);
-  height: 100%;
 }
 
 .p-tag {
@@ -409,9 +403,16 @@ nav {
 
 /* ---------------------- This is Side-bar ---------------------*/
 
+.left-bar {
+  /* align-items: start; */
+  background-color: var(--blue1);
+  height: 100%;
+}
+
 .side-bar {
   grid-column: 1;
   position: sticky;
+  position: -webkit-sticky;
   top: 0vw;
   background: var(--blue1);
   padding: 70px 55px 0px 0px;
@@ -429,13 +430,11 @@ nav {
   font-size: 1.25rem;
   font-weight: 600;
   padding: 10px 0;
-  /* margin: 0px 0px 0px 40px; */
   transition: var(--transition);
 }
 
 .side-bar a:hover {
   color: var(--white);
-  padding-left: 20px;
   margin-right: -20px;
   transition: var(--transition);
 }
@@ -702,7 +701,7 @@ video {
   .grid-container-artwork {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
   }
 
   .frame-AW {
@@ -716,7 +715,7 @@ video {
 
 
 /* Medium Laptop Screen */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
   /* Home Page */
   .grid-container {
@@ -748,7 +747,14 @@ video {
 
 
   /* Projects Page */
+  .left-bar {
+    /* display: none; */
+    height: 0px;
+  }
+
   .side-bar {
+    position: sticky;
+    position: -webkit-sticky;
     flex-direction: row;
     top: 0;
     width: 100%;
@@ -766,7 +772,7 @@ video {
   .side-bar a {
     color: var(--white);
     font-family: var(--font1);
-    font-size: 100%;
+    font-size: 1.1rem;
     font-weight: 600;
     padding: 15px 20px 15px 20px;
     border-bottom: 0px solid var(--blue1);
@@ -777,15 +783,12 @@ video {
     background: var(--blue1);
   }
 
-  .side-bar {
-    left: 10%;
-  }
-
   .side-bar a:hover {
     color: var(--blue1);
     background: var(--white);
     padding: 15px 20px 15px 20px;
-    margin-left: 0px;
+    margin-top: -5px;
+    margin-right: 0px;
     transition: var(--transition);
   }
 
