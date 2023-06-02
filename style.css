@@ -29,7 +29,7 @@ body {
   font-family: var(--font1);
   box-sizing: border-box;
   scrollbar-gutter: stable both-edges;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
 :after,
@@ -310,7 +310,7 @@ nav {
 .frame-AW .imageBehind img {
   width: 300px;
   height: 300px;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 5px;
   border: 3px solid var(--accent);
   object-fit: cover;
@@ -320,10 +320,10 @@ nav {
 
 }
 
-.frame-AW .imageBehind video {
+.frame-AW .imageBehind picture video {
   width: 300px;
   height: 300px;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 5px;
   border: 3px solid var(--accent);
   object-fit: cover;
@@ -336,7 +336,7 @@ nav {
 .frame-AW .imageBehind iframe {
   width: 300px;
   height: 300px;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 5px;
   border: 3px solid var(--accent);
   object-fit: cover;
@@ -362,16 +362,16 @@ nav {
 
 .fr-text {
   position: absolute;
-  width: 95.2%;
-  height: 35.5%;
-  margin-top: -40.5%;
+  width: 95%;
+  height: 35%;
+  margin-top: -41%;
   padding-top: 10px;
   padding-left: 15px;
   font-family: var(--font1);
   font-size: 1.25em;
   font-weight: 700;
   letter-spacing: 1px;
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 5px 5px;
   color: var(--white);
   transition: var(--transition);
   opacity: 0%;
@@ -593,13 +593,22 @@ picture>img {
   justify-content: center;
 }
 
-.artwork img,
-iframe,
+.artwork iframe,
+img,
 video {
   max-width: 800px;
   padding: 5px;
   border: 3px solid var(--accent);
   box-sizing: border-box;
+}
+
+.artwork picture {
+  max-width: 800px;
+}
+
+.artwork picture>img,
+video {
+  max-width: 100%;
 }
 
 .tcontainer {
