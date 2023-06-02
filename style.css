@@ -54,7 +54,7 @@ nav {
   color: var(--blue1);
   font-size: 1.5em;
   font-weight: 900;
-  width: 390px;
+  width: 20%;
   /* padding-left: 10%; */
   text-align: end;
   text-transform: uppercase;
@@ -255,11 +255,9 @@ nav {
 /* ---------------------- This is Gallery ---------------------*/
 
 .p-layout {
-  /* width: 80%; */
   margin: auto;
   display: grid;
   grid-template-columns: 20% 1fr;
-  /* column-gap: 50px; */
   /* align-items: start; */
 }
 
@@ -693,6 +691,9 @@ video {
 
 /* Laptop Screen */
 @media screen and (max-width: 1500px) {
+
+
+
   .p-AW {
     margin-left: auto;
     margin-right: auto;
@@ -826,22 +827,20 @@ video {
   .frame img {
     width: 350px;
     height: 350px;
-    border-radius: 15px;
+    border-radius: 5px;
     object-fit: cover;
   }
 
 
   .grid-container {
     width: 100%;
-    height: 70%;
-    gap: 20px;
+    gap: 50px;
   }
 
   .intro {
     color: var(--blue1);
     font-family: var(--font1);
     font-size: 1em;
-    margin-top: -50px;
     text-align: left;
     justify-self: end;
   }
@@ -852,43 +851,23 @@ video {
     padding: 0 20px;
   }
 
-  .left-Text {
+  .home-Text {
     color: var(--accent);
-    text-align: left;
+    text-align: center;
     font-size: 1.1em;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     line-height: 2em;
   }
 
   .CTA {
-    margin-left: -38px;
+    margin-left: -45px;
     text-align: center;
   }
 
   .button-holder {
-    background: var(--blue1);
-    border-radius: 15px;
-    float: left;
-    width: 80%;
-    height: 125px;
-    margin-left: 20px;
-    text-align: center;
-  }
-
-  .button {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 900;
-    font-size: 1.75em;
-    letter-spacing: 1.25px;
-    border-left: 3px solid var(--white);
-    padding-left: 15px;
-    padding-top: 15px;
-    padding-bottom: 100px;
-    padding: 15px 30.5% 10px 15px;
-    margin-left: 10px;
-    transition: var(--transition);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* Projects Page */
@@ -897,6 +876,14 @@ video {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: none;
     justify-content: center;
+  }
+
+  .top-button a {
+    padding-left: 6px;
+  }
+
+  .top-button {
+    margin-right: -50px;
   }
 
   .top-button:hover {
