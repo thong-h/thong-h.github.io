@@ -706,6 +706,20 @@ video {
 
 }
 
+.concept {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.concept .artwork {
+  max-width: 375px;
+  padding: 0px;
+  margin: 15px auto;
+}
+
 
 /* ---------------------- This is Responsive Media ---------------------*/
 
@@ -932,6 +946,10 @@ video {
 
   .year {
     font-size: 1.5rem;
+  }
+
+  .concept .artwork {
+    padding: 0px 40px;
   }
 }
 
