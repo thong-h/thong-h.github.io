@@ -350,7 +350,7 @@ nav {
   transition: var(--transition);
 }
 
-.imageBehind:hover video {
+.imageBehind:hover picture>video {
   filter: grayscale(1) blur(1px);
   transition: var(--transition);
 }
@@ -490,6 +490,7 @@ picture>img {
 
 .contact-info {
   max-width: 500px;
+  /* margin-top: 50px; */
   justify-self: right;
   align-self: center;
   font-family: var(--font1);
@@ -581,6 +582,12 @@ picture>img {
   color: var(--white);
   background: var(--accent);
   transition: var(--transition);
+}
+
+.sub-about .resume {
+  color: var(--white);
+  background: var(--blue1);
+  border: 3px solid var(--blue1);
 }
 
 
