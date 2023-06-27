@@ -633,6 +633,10 @@ video {
 .name {
   color: var(--accent);
   letter-spacing: 0.1rem;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  /* margin-bottom: -20px; */
 }
 
 .year {
@@ -712,7 +716,7 @@ video {
 }
 
 .concept .artwork {
-  max-width: 375px;
+  max-width: 380px;
   padding: 0px;
   margin: 15px auto;
 }
